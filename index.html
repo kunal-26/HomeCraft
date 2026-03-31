@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Home Craft</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <h1>Home Craft</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+
+            <button id="loginBtn">Admin Login</button>
+            <button id="logoutBtn">Logout</button>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <h2>Premium Kitchen & Storage</h2>
+            <p>Organize Smart • Live Better</p>
+        </div>
+    </section>
+
+    <!-- CATEGORY FLOAT -->
+    <section id="categories">
+        <h2 class="section-title">Shop By Category</h2>
+        <div id="categoryCards" class="category-row"></div>
+    </section>
+
+    <!-- FILTER -->
+    <div class="filters">
+        <input id="search" placeholder="Search product...">
+        <select id="categoryFilter"></select>
+    </div>
+
+    <!-- PRODUCTS -->
+    <div id="products" class="grid"></div>
+
+    <!-- ABOUT -->
+    <section id="about" class="info">
+        <h2>About Us</h2>
+        <p>
+            Singhavi Marketing provides premium kitchen and storage solutions designed for modern homes combining durability and elegance.
+        </p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="info">
+        <h2>Contact Us</h2>
+        <p>Email: info@singhavi.com</p>
+        <p>Phone: +91 XXXXX XXXXX</p>
+    </section>
+
+    <!-- ADMIN PANEL -->
+    <div id="adminPanel">
+
+        <h2>Add Product</h2>
+
+        <input id="name" placeholder="Product Name">
+        <input id="price" type="number" placeholder="Price ₹">
+        <input id="color" placeholder="Color">
+        <textarea id="description" placeholder="Description"></textarea>
+        <input id="category" placeholder="Category">
+
+        <input type="file" id="imageFile" accept="image/*">
+        <div id="preview"></div>
+
+        <button onclick="addProduct()">Save Product</button>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
